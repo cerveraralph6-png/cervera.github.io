@@ -13,47 +13,98 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      scroll-behavior: smooth; /* smooth scroll */
     }
 
+    /* Fixed header / navbar */
     #nav {
       background-color: black;
       color: white;
-      padding: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
     }
 
-    #nav p {
-      margin: 0;
-      font-size: 20px;
+    #nav .logo {
+      font-size: 22px;
       font-weight: bold;
+      margin: 0;
     }
 
+    #nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      margin-right: 50px;
+    }
+
+    #nav ul li {
+      display: inline;
+    }
+
+    #nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    #nav ul li a:hover {
+      color: #1DB954; /* Spotify green hover */
+    }
+
+    /* Hero Section */
     #content {
-      background-color: white;
-      padding: 10px;
-      text-align: center;
       flex: 1;
+      min-height: 100vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(https://i.scdn.co/image/ab6761610000e5eb98dc86ab83800a3a9a85920c);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      text-shadow: 1px 1px 3px black;
+      padding: 20px;
     }
 
-    #container {
-      padding: 20px;
+    /* Sections */
+    section {
+      padding: 100px 20px 20px;
       text-align: center;
     }
 
     .release {
-      display: inline-block;     /* Keep release blocks aligned */
-      text-align: center;        /* Center the text under image */
+      display: inline-block;
+      text-align: center;
       margin: 10px;
     }
 
     .release img {
-      display: block;            /* Make image take full line */
-      margin: 0 auto;            /* Center image */
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
     }
 
     .release h2 {
-      margin-top: 10px;          /* Space between image and text */
+      margin-top: 10px;
     }
 
+    /* Footer */
     #footer {
       background-color: black;
       color: white;
@@ -63,48 +114,69 @@
   </style>
 </head>
 <body>
+  <!-- Navbar -->
   <div id="nav">
-    <p>Ralph Cervera</p>
+    <p class="logo">Ralph Cervera</p>
+    <ul>
+      <li><a href="#content">Home</a></li>
+      <li><a href="#eps">EPs</a></li>
+      <li><a href="#singles">Singles</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
   </div>
 
+  <!-- Hero -->
   <div id="content">
     <h1>Welcome to my site!</h1>
     <p>This is a sample page.</p>
     <br>
     <p>Latest release</p>
-    <img src="https://st.depositphotos.com/1186248/2751/i/450/depositphotos_27516565-stock-photo-free-sample.jpg" alt="img" width="300" height="200">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH07LbMCZsjYf3sR6V9tmEYiIYXIzyVAMrUw&s" alt="img" width="300" height="300">
   </div>
 
-  <div id="container">
-    <h1>Releases</h1>
-
+  <!-- EPs -->
+  <section id="eps">
+    <h1>EPs</h1>
     <div class="release">
-      <img src="https://st.depositphotos.com/1186248/2751/i/450/depositphotos_27516565-stock-photo-free-sample.jpg" alt="img" width="300" height="200">
-      <h2>Release 1</h2>
+      <img src="https://i.scdn.co/image/ab67616d00001e02013ab29fc2b084532f6528d8" alt="img" width="300" height="300">
+      <h2>Kahit Malayo</h2>
     </div>
+  </section>
 
+  <!-- Singles -->
+  <section id="singles">
+    <h1>Singles</h1>
     <div class="release">
-      <img src="https://st.depositphotos.com/1186248/2751/i/450/depositphotos_27516565-stock-photo-free-sample.jpg" alt="img" width="300" height="200">
-      <h2>Release 1</h2>
+      <img src="https://i.scdn.co/image/ab67616d00001e02eeda5c5833bb76c85b809313" alt="img" width="300" height="300">
+      <h2>Ikaw Lang</h2>
     </div>
-
     <div class="release">
-      <img src="https://st.depositphotos.com/1186248/2751/i/450/depositphotos_27516565-stock-photo-free-sample.jpg" alt="img" width="300" height="200">
-      <h2>Release 1</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsThIipJx1PtjWQXgvR1djnPgfrp3Enb_fFg&s" alt="img" width="300" height="300">
+      <h2>Makalaya</h2>
     </div>
-
     <div class="release">
-      <img src="https://st.depositphotos.com/1186248/2751/i/450/depositphotos_27516565-stock-photo-free-sample.jpg" alt="img" width="300" height="200">
-      <h2>Release 1</h2>
+      <img src="https://i.scdn.co/image/ab67616d00001e02773441bd2a1c50b07cea9f0f" alt="img" width="300" height="300">
+      <h2>Baliw Sayo</h2>
     </div>
-
     <div class="release">
-      <img src="https://st.depositphotos.com/1186248/2751/i/450/depositphotos_27516565-stock-photo-free-sample.jpg" alt="img" width="300" height="200">
-      <h2>Release 1</h2>
+      <img src="https://i.scdn.co/image/ab67616d00001e02467daa9f0393799661184fe3" alt="img" width="300" height="300">
+      <h2>Jskie</h2>
     </div>
+    <div class="release">
+      <img src="https://i1.sndcdn.com/artworks-w3g6zGrGaqdEmGEU-VP143w-t240x240.jpg" alt="img" width="300" height="300">
+      <h2>Jhanelly</h2>
+    </div>
+    <div class="release">
+      <img src="https://i1.sndcdn.com/artworks-gji2p6dbiT35tEGg-24eC0A-t240x240.jpg" alt="img" width="300" height="300">
+      <h2>Takip Silim</h2>
+    </div>
+    <div class="release">
+      <img src="https://i.scdn.co/image/ab67616d00001e02e3044a151fc538a3715524a6" alt="img" width="300" height="300">
+      <h2>Hiling</h2>
+    </div>
+  </section>
 
-  </div>
-
+  <!-- Footer -->
   <div id="footer">
     <p>Contact me at: ralph.cervera@gmail.com</p>
   </div>
