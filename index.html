@@ -56,18 +56,17 @@
       color: white;
       text-decoration: none;
       font-size: 16px;
-      transition: color 0.3s;
     }
 
     #nav ul li a:hover {
       color: #1DB954;
+      transition: color 0.3s;
     }
 
     #content {
       flex: 1;
       min-height: 100vh;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(https://i.scdn.co/image/ab6761610000e5eb98dc86ab83800a3a9a85920c);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://i.scdn.co/image/ab6761610000e5eb98dc86ab83800a3a9a85920c);
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -86,6 +85,24 @@
       margin-bottom: 100px;
     }
 
+    #content h2{
+        color: white;
+    }
+
+    #content a:hover {
+
+        transform: scale(1.05);
+        transition: transform 0.3s;
+    }
+
+    #EP {
+        background-image: url(https://i.scdn.co/image/ab67616d00001e02013ab29fc2b084532f6528d8);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+    }
+
     section {
       padding: 100px 20px 20px;
       text-align: center;
@@ -94,6 +111,11 @@
     a {
       text-decoration: none;
       color: black;
+    }
+
+    a:hover {
+      color: #1DB954;
+      
     }
 
     .release {
@@ -108,23 +130,70 @@
       border-radius: 8px;
     }
 
+    .release:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+
     .release h2 {
       margin-top: 10px;
     }
 
+
+
+    
+
+    /* Footer */
     #footer {
       background-color: black;
       color: white;
-      padding: 10px;
+      padding: 30px 20px;
       text-align: center;
-      flex: 1;
-      min-height: 100vh;
     }
 
-    #footer a {
-      color: white;
+    #footer p {
+      font-size: 20px;
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+
+    #footer .social-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin: 0 auto;
+    }
+
+    #footer .social-links a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-decoration: none;
-        margin: 0 10px;
+      color: white;
+      font-size: 14px; /* smaller labels */
+      opacity: 0.85;
+      transition: color 0.3s, opacity 0.3s;
+    }
+
+    #footer .social-links a img {
+      width: 50px;   /* bigger icons */
+      height: 50px;
+      margin-bottom: 6px;
+      transition: transform 0.3s, filter 0.3s;
+    }
+
+    #tiktok-icon {
+      filter: invert(1) brightness(2);
+    }
+
+    #footer .social-links a:hover {
+      color: #1DB954;
+      opacity: 1;
+    }
+
+    #footer .social-links a:hover img {
+      transform: scale(1.2);
     }
   </style>
 </head>
@@ -140,65 +209,105 @@
   </div>
 
   <div id="content">
-    <h1>Latest release<h1>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH07LbMCZsjYf3sR6V9tmEYiIYXIzyVAMrUw&s" alt="img" width="300" height="300">
+    <h1>Latest release</h1>
+        <a href="https://www.push.fm/fl/araw-at-buwan">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH07LbMCZsjYf3sR6V9tmEYiIYXIzyVAMrUw&s" alt="img" width="300" height="300">
+        <h2>Araw at Buwan</h2>
+        </a>
   </div>
 
+  <div id="EP">
   <section id="eps">
     <h1>EPs</h1>
     <div class="release">
-      <img src="https://i.scdn.co/image/ab67616d00001e02013ab29fc2b084532f6528d8" alt="img" width="300" height="300">
-      <a href="https://www.push.fm/fl/kahit-malayo"><h2>Kahit Malayo</h2></a>
+        <a href="https://www.push.fm/fl/kahit-malayo">
+            <img src="https://i.scdn.co/image/ab67616d00001e02013ab29fc2b084532f6528d8" alt="img" width="300" height="300">
+            <h2>Kahit Malayo</h2>
+        </a>
     </div>
   </section>
+  </div>
 
   <section id="singles">
     <h1>Singles</h1>
     <div class="release">
-      <img src="https://i.scdn.co/image/ab67616d00001e02eeda5c5833bb76c85b809313" alt="img" width="300" height="300">
-      <a href="https://www.push.fm/fl/ikaw-lang"><h2>Ikaw Lang</h2></a>
+        <a href="https://www.push.fm/fl/ikaw-lang">
+            <img src="https://i.scdn.co/image/ab67616d00001e02eeda5c5833bb76c85b809313" alt="img" width="300" height="300">
+            <h2>Ikaw Lang</h2>
+        </a>
     </div>
 
     <div class="release">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsThIipJx1PtjWQXgvR1djnPgfrp3Enb_fFg&s" alt="img" width="300" height="300">
-      <a href="https://www.push.fm/fl/makalaya"><h2>Makalaya</h2></a>
+        <a href="https://www.push.fm/fl/makalaya">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsThIipJx1PtjWQXgvR1djnPgfrp3Enb_fFg&s" alt="img" width="300" height="300">
+            <h2>Makalaya</h2>
+        </a>
     </div>
 
     <div class="release">
-      <img src="https://i.scdn.co/image/ab67616d00001e02773441bd2a1c50b07cea9f0f" alt="img" width="300" height="300">
-      <a href="https://www.push.fm/fl/baliw-sayo"><h2>Baliw Sayo</h2></a>
+        <a href="https://www.push.fm/fl/baliw-sayo">
+            <img src="https://i.scdn.co/image/ab67616d00001e02773441bd2a1c50b07cea9f0f" alt="img" width="300" height="300">
+            <h2>Baliw Sayo</h2> 
+        </a>
     </div>
 
     <div class="release">
-      <img src="https://i.scdn.co/image/ab67616d00001e02467daa9f0393799661184fe3" alt="img" width="300" height="300">
-      <a href="https://www.push.fm/fl/jskie"><h2>Jskie</h2></a>
+        <a href="https://www.push.fm/fl/jskie">
+            <img src="https://i.scdn.co/image/ab67616d00001e02467daa9f0393799661184fe3" alt="img" width="300" height="300">
+            <h2>Jskie</h2>  
+        </a>
     </div>
 
     <div class="release">
-      <img src="https://i1.sndcdn.com/artworks-w3g6zGrGaqdEmGEU-VP143w-t240x240.jpg" alt="img" width="300" height="300">
-      <a href="https://www.push.fm/fl/jhanelly"><h2>Jhanelly</h2></a>
+        <a href="https://www.push.fm/fl/jhanelly">
+            <img src="https://i1.sndcdn.com/artworks-w3g6zGrGaqdEmGEU-VP143w-t240x240.jpg" alt="img" width="300" height="300">
+            <h2>Jhanelly</h2>
+        </a>
     </div>
 
     <div class="release">
-      <img src="https://i.scdn.co/image/ab67616d00001e02e3044a151fc538a3715524a6" alt="img" width="300" height="300">
-      <a href="https://www.push.fm/fl/hiling"><h2>Hiling</h2></a>
+        <a href="https://www.push.fm/fl/hiling">
+            <img src="https://i.scdn.co/image/ab67616d00001e02e3044a151fc538a3715524a6" alt="img" width="300" height="300">
+            <h2>Hiling</h2>
+        </a>
     </div>
 
     <div class="release">
-      <img src="https://i1.sndcdn.com/artworks-gji2p6dbiT35tEGg-24eC0A-t240x240.jpg" alt="img" width="300" height="300">
-      <a href=""><h2>Takip Silim</h2></a>
+        <a href="#">
+            <img src="https://i1.sndcdn.com/artworks-gji2p6dbiT35tEGg-24eC0A-t240x240.jpg" alt="img" width="300" height="300">
+            <h2>Takip Silim</h2>
+        </a>
     </div>
   </section>
 
   <div id="footer">
-    <p>Get Connected wit Ralph Cervera: </p>
-    <a href="https://www.facebook.com/ralphcerveraofficial" target="_blank">Facebook</a> <br>
-    <a href="https://www.instagram.com/ralphcerveraofficial" target="_blank">Instagram</a> <br>
-    <a href="https://www.youtube.com/channel/UC1-3-9-1g-0-2-4-5" target="_blank">YouTube</a> <br>
-    <a href="https://www.tiktok.com/@ralphcerveraofficial" target="_blank">TikTok</a><br>
-    <a href="https://twitter.com/ralphcerveraofficial" target="_blank">Twitter</a><br>
-    <a href="#">spotify</a>
-
+    <p>Get Connected with Ralph Cervera:</p>
+    <div class="social-links">
+      <a href="https://facebook.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        <span>Facebook</span>
+      </a>
+      <a href="https://instagram.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        <span>Instagram</span>
+      </a>
+      <a href="https://youtube.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+        <span>YouTube</span>
+      </a>
+      <a href="https://www.tiktok.com/@ralphcerveraofficial" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok" id="tiktok-icon">
+        <span>TikTok</span>
+      </a>
+      <a href="https://twitter.com/ralphcerveraofficial" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+        <span>Twitter</span>
+      </a>
+      <a href="#" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111624.png" alt="Spotify">
+        <span>Spotify</span>
+      </a>
+    </div>
   </div>
 </body>
 </html>
