@@ -1,52 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sample page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sample page</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-        #nav {
-            background-color: black;
-            color: white;
-            padding: 10px;
-        }
+    #nav {
+      background-color: black;
+      color: white;
+      padding: 10px;
+    }
 
-        #content {
-            background-color: white;
-            padding: 10px;
-        }
+    #nav p {
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
 
-        #footer {
-            background-color: black;
-            color: white;
-            padding: 10px;
-            
-        }
-    </style>
+    #content {
+      background-color: white;
+      padding: 10px;
+      text-align: center;
+      flex: 1;
+    }
+
+    #container {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .release {
+      display: inline-block;     /* Keep release blocks aligned */
+      text-align: center;        /* Center the text under image */
+      margin: 10px;
+    }
+
+    .release img {
+      display: block;            /* Make image take full line */
+      margin: 0 auto;            /* Center image */
+    }
+
+    .release h2 {
+      margin-top: 10px;          /* Space between image and text */
+    }
+
+    #footer {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <div id="nav">
-        <p>Ralph Cervera</p>
+  <div id="nav">
+    <p>Ralph Cervera</p>
+  </div>
+
+  <div id="content">
+    <h1>Welcome to my site!</h1>
+    <p>This is a sample page.</p>
+    <br>
+    <p>Latest release</p>
+    <img src="https://st.depositphotos.com/1186248/2751/i/450/depositphotos_27516565-stock-photo-free-sample.jpg" alt="img" width="300" height="200">
+  </div>
+
+  <div id="container">
+    <h1>Releases</h1>
+
+    <div class="release">
+      <img src="https://st.depositphotos.com/1186248/2751/i/450/depositphotos_27516565-stock-photo-free-sample.jpg" alt="img" width="300" height="200">
+      <h2>Release 1</h2>
     </div>
 
-    <div id="content">
-        <h1>Welcome to my site!</h1>
-        <p>This is a sample page.</p>
-        <p>I'm a web developer.</p>
+    <div class="release">
+      <img src="https://st.depositphotos.com/1186248/2751/i/450/depositphotos_27516565-stock-photo-free-sample.jpg" alt="img" width="300" height="200">
+      <h2>Release 1</h2>
     </div>
 
-    <div id="footer">
-        <p>Contact me at: ralph.cervera@gmail.com</p>
+    <div class="release">
+      <img src="https://st.depositphotos.com/1186248/2751/i/450/depositphotos_27516565-stock-photo-free-sample.jpg" alt="img" width="300" height="200">
+      <h2>Release 1</h2>
     </div>
 
+    <div class="release">
+      <img src="https://st.depositphotos.com/1186248/2751/i/450/depositphotos_27516565-stock-photo-free-sample.jpg" alt="img" width="300" height="200">
+      <h2>Release 1</h2>
+    </div>
 
+    <div class="release">
+      <img src="https://st.depositphotos.com/1186248/2751/i/450/depositphotos_27516565-stock-photo-free-sample.jpg" alt="img" width="300" height="200">
+      <h2>Release 1</h2>
+    </div>
 
+  </div>
+
+  <div id="footer">
+    <p>Contact me at: ralph.cervera@gmail.com</p>
+  </div>
 </body>
 </html>
