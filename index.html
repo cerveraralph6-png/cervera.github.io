@@ -14,10 +14,9 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      scroll-behavior: smooth; /* smooth scroll */
+      scroll-behavior: smooth;
     }
 
-    /* Fixed header / navbar */
     #nav {
       background-color: black;
       color: white;
@@ -61,10 +60,9 @@
     }
 
     #nav ul li a:hover {
-      color: #1DB954; /* Spotify green hover */
+      color: #1DB954;
     }
 
-    /* Hero Section */
     #content {
       flex: 1;
       min-height: 100vh;
@@ -88,7 +86,6 @@
       margin-bottom: 100px;
     }
 
-    /* Sections */
     section {
       padding: 100px 20px 20px;
       text-align: center;
@@ -115,17 +112,17 @@
       margin-top: 10px;
     }
 
-    /* Footer */
     #footer {
       background-color: black;
       color: white;
       padding: 10px;
       text-align: center;
+      flex: 1;
+      min-height: 100vh;
     }
   </style>
 </head>
 <body>
-  <!-- Navbar -->
   <div id="nav">
     <p class="logo">Ralph Cervera</p>
     <ul>
@@ -136,13 +133,11 @@
     </ul>
   </div>
 
-  <!-- Hero -->
   <div id="content">
     <h1>Latest release<h1>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH07LbMCZsjYf3sR6V9tmEYiIYXIzyVAMrUw&s" alt="img" width="300" height="300">
   </div>
 
-  <!-- EPs -->
   <section id="eps">
     <h1>EPs</h1>
     <div class="release">
@@ -151,7 +146,6 @@
     </div>
   </section>
 
-  <!-- Singles -->
   <section id="singles">
     <h1>Singles</h1>
     <div class="release">
@@ -159,24 +153,20 @@
       <a href="https://www.push.fm/fl/ikaw-lang"><h2>Ikaw Lang</h2></a>
     </div>
 
-
     <div class="release">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsThIipJx1PtjWQXgvR1djnPgfrp3Enb_fFg&s" alt="img" width="300" height="300">
       <a href="https://www.push.fm/fl/makalaya"><h2>Makalaya</h2></a>
     </div>
-
 
     <div class="release">
       <img src="https://i.scdn.co/image/ab67616d00001e02773441bd2a1c50b07cea9f0f" alt="img" width="300" height="300">
       <a href="https://www.push.fm/fl/baliw-sayo"><h2>Baliw Sayo</h2></a>
     </div>
 
-
     <div class="release">
       <img src="https://i.scdn.co/image/ab67616d00001e02467daa9f0393799661184fe3" alt="img" width="300" height="300">
       <a href="https://www.push.fm/fl/jskie"><h2>Jskie</h2></a>
     </div>
-
 
     <div class="release">
       <img src="https://i1.sndcdn.com/artworks-w3g6zGrGaqdEmGEU-VP143w-t240x240.jpg" alt="img" width="300" height="300">
@@ -194,7 +184,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <div id="footer">
     <p>Contact me at: ralph.cervera@gmail.com</p>
   </div>
