@@ -182,3 +182,56 @@ body {
     #footer .social-links a:hover img {
       transform: scale(1.2);
     }
+
+
+
+    /* Hamburger button (hidden on desktop) */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background: white;
+      border-radius: 3px;
+      transition: 0.3s;
+    }
+
+    /* Mobile menu hidden by default */
+    #nav ul {
+      transition: max-height 0.3s ease-in-out;
+    }
+
+    @media (max-width: 768px) {
+      #nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 20px;
+      }
+
+      .hamburger {
+        display: flex;
+        margin-right: 50px;
+      }
+
+      #nav ul {
+        flex-direction: column;
+        width: 100%;
+        background: black;
+        overflow: hidden;
+        max-height: 0; /* collapsed */
+      }
+
+      #nav ul.show {
+        max-height: 300px; /* expanded */
+      }
+
+      #nav ul li {
+        padding: 10px 0;
+        text-align: center;
+      }
+    }
