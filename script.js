@@ -12,4 +12,3 @@
       navLinks.classList.remove("show");
     }
   });
-
