@@ -3,6 +3,7 @@
   --hamburger-color: rgb(67, 98, 255);
   --text-color: rgb(255, 255, 255);
   --text-color2: rgb(0, 0, 0);
+  --scrl-color: rgb(66, 0, 107);
 }
   
 body{
@@ -180,11 +181,13 @@ a:hover {
 
 .release h2 {
   margin-top: 10px;
-  
+  color: var(--text-color2)
 }
 
 #eps h1{
+  font-size: 50px;
   margin-top: 10vh;
+  color: var(--text-color2);
 }
 
 
@@ -245,6 +248,25 @@ a:hover {
 #footer p a:hover{
   color: var(--hover-color);
   transition: color 0.3s;
+}
+
+#morearrow{
+  background: var(--scrl-color);
+  padding: 15px;
+  border-radius: 20px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 
