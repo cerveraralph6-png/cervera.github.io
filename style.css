@@ -62,10 +62,29 @@ body{
   transition: color 0.3s;
 }
 
+/* Hamburger button (hidden on desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--hamburger-color);
+  border-radius: 3px;
+  transition: 0.3s;
+}
+/* Mobile menu hidden by default */
+#nav ul {
+  transition: max-height 0.3s ease-in-out;
+}
+
 #content {
   flex: 1;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://i.scdn.co/image/ab6761610000e5eb98dc86ab83800a3a9a85920c);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH07LbMCZsjYf3sR6V9tmEYiIYXIzyVAMrUw&s);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -77,60 +96,83 @@ body{
   color: white;
   text-shadow: 1px 1px 3px black;
   padding: 20px;
+
+ 
 }
+
+
 
 #content h1 img {
   font-size: 50px;
   margin-bottom: 100px;
+  
+}
+
+#content h1{
+  font-size: 50px;
 }
 
 img{
-  border-radius: 8px;
+    border-radius: 8px;
 }
 
 #content h2{
-  color: var(--text-color);
+    color: var(--text-color);
+}
+
+#content a {
+    margin-bottom: 10vh;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 #content a:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s;
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
 
 #EP {
-  background-image: url(https://i.scdn.co/image/ab67616d00001e02013ab29fc2b084532f6528d8);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh;
+    background-image: url(https://i.scdn.co/image/ab67616d00001e02013ab29fc2b084532f6528d8);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    
 }
+
 
 section {
   padding: 100px 20px 20px;
   text-align: center;
+  
 }
-
 a {
   text-decoration: none;
   color: black;
+  
 }
-
 a:hover {
   color: var(--hover-color);
+  
 }
-
 .release {
   display: inline-block;
   text-align: center;
   margin: 10px;
+  
+  
 }
-
 .release img {
   display: block;
   margin: 0 auto;
   border-radius: 8px;
+  
 }
-
 .release:hover {
   transform: scale(1.05);
   transition: transform 0.3s;
@@ -138,7 +180,13 @@ a:hover {
 
 .release h2 {
   margin-top: 10px;
+  
 }
+
+#eps h1{
+  margin-top: 10vh;
+}
+
 
 #singles h2{
   color: var(--text-color);
@@ -173,12 +221,12 @@ a:hover {
   align-items: center;
   text-decoration: none;
   color: var(--text-color);
-  font-size: 14px;
+  font-size: 14px; /* smaller labels */
   opacity: 0.85;
   transition: color 0.3s, opacity 0.3s;
 }
 #footer .social-links a img {
-  width: 50px;
+  width: 50px;   /* bigger icons */
   height: 50px;
   margin-bottom: 6px;
   transition: transform 0.3s, filter 0.3s;
@@ -190,24 +238,15 @@ a:hover {
   transform: scale(1.2);
 }
 
-/* Hamburger button (hidden on desktop) */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
+#footer p a{
+  color: var(--text-color);
 }
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: var(--hamburger-color);
-  border-radius: 3px;
-  transition: 0.3s;
+
+#footer p a:hover{
+  color: var(--hover-color);
+  transition: color 0.3s;
 }
-/* Mobile menu hidden by default */
-#nav ul {
-  transition: max-height 0.3s ease-in-out;
-}
+
 
 @media (max-width: 768px) {
   #nav {
@@ -235,6 +274,7 @@ a:hover {
   }
 
   /* Content */
+
   #content a{
     margin-bottom: 100px;
   }
@@ -248,4 +288,5 @@ a:hover {
   #singles h2{
     font-size: 18px;
   }
+  
 }
