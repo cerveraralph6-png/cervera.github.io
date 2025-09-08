@@ -161,6 +161,16 @@ a:hover {
   color: var(--hover-color);
   
 }
+
+#singles-bg {
+  background-image: url(https://scontent.fcrk1-2.fna.fbcdn.net/v/t39.30808-6/474020601_122177725880106255_2441786625919345022_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeFaKUQ78Q2VFnIC9WP45stK-QGZ5rnQD6n5AZnmudAPqfWkVMnZRCatQVeWklVv0-NoZ3CvPMOFQedQfqyNAKO3&_nc_ohc=aGgLHPGFz8UQ7kNvwFYjjin&_nc_oc=AdlaVVIefCFsgjs828S1scn64bsF1HRSLxhxbwwvvG9Oj447Kw9hjxZZBVTNgRMQ7XU&_nc_zt=23&_nc_ht=scontent.fcrk1-2.fna&_nc_gid=2nTDvhn2wsnQp36lw4atPg&oh=00_AfZXkae3H3opKPObDCZr4hUzyiowWLWpB7C25JC8-hcQAw&oe=68C42369);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
 .release {
   display: inline-block;
   text-align: center;
