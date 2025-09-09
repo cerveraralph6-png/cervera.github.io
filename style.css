@@ -186,6 +186,7 @@ a:hover {
   display: block;
   margin: 0 auto;
   border-radius: 8px;
+ 
   
 }
 .release:hover {
@@ -264,16 +265,9 @@ a:hover {
   transition: color 0.3s;
 }
 
-#morearrow{
-  background: var(--scrl-color);
-  padding: 10px;
-  border-radius: 20px;
-  animation: bounce 2s infinite;
-  margin-left: 1100px;
-  font-weight: bold;
-  color: var(--text-color);
-  text-decoration: none;
-}
+
+
+
 
 @keyframes bounce {
   0% {
@@ -320,6 +314,12 @@ a:hover {
   #content a{
     margin-bottom: 100px;
   }
+
+  #eps h1{
+  font-size: 50px;
+  margin-top: 5vh;
+  color: var(--text-color2);
+}
   
   /* Singles */
   #singles img{
@@ -332,11 +332,5 @@ a:hover {
   }
   
     /* More arrow */
-  #morearrow {
-    width: 150px;
-    font-size: 14px;
-    padding: 10px;
-    margin: 10px auto 20px; /* center on mobile */
-    display: block;
-  }
+  
 }
