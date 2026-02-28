@@ -4,188 +4,153 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="https://i.scdn.co/image/ab6761610000e5eb98dc86ab83800a3a9a85920c" type="image/x-icon">
-  <title>Ralph Cervera</title>
+  <title>Ralph Cervera | Official Artist Site</title>
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <div id="nav">
-    <p class="logo">Ralph Cervera</p>
-    <!-- Hamburger button -->
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
+  <!-- Interactive Background Glow -->
+  <div class="cursor-glow"></div>
+
+  <!-- Modern Navigation -->
+  <nav id="navbar">
+    <div class="nav-blur"></div>
+    <div class="nav-content">
+      <div class="logo-wrap">
+        <span class="logo">RC</span>
+        <span class="logo-full">RALPH CERVERA</span>
+      </div>
+      <div class="hamburger" id="menu-btn">
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#watch">YouTube</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <ul id="nav-links">
-      <li><a href="#content">Home</a></li>
-      <li><a href="#eps">EPs</a></li>
-      <li><a href="#singles">Singles</a></li>
-      <li><a href="#footer">Contact</a></li>
-    </ul>
-  </div>
+  <!-- Immersive Hero Section -->
+  <header id="home" class="hero">
+    <div class="hero-bg" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH07LbMCZsjYf3sR6V9tmEYiIYXIzyVAMrUw&s');"></div>
+    <div class="hero-content">
+      <div class="reveal">
+        <span class="hero-tag">New Release</span>
+        <h1 class="hero-title">Araw at <br>Buwan</h1>
+        <div class="hero-actions">
+          <a href="https://www.push.fm/fl/araw-at-buwan" target="_blank" class="btn primary">Stream Now</a>
+          <a href="#music" class="btn secondary">Discography</a>
+        </div>
+      </div>
+      <div class="hero-art-wrap reveal">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH07LbMCZsjYf3sR6V9tmEYiIYXIzyVAMrUw&s" alt="Araw at Buwan" class="floating-art">
+      </div>
+    </div>
+  </header>
 
-  <!--Latest Release-->
-  <div id="content">
-    <h1>Latest Single</h1>
-        <a href="https://www.push.fm/fl/araw-at-buwan">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH07LbMCZsjYf3sR6V9tmEYiIYXIzyVAMrUw&s" alt="img" width="300" height="300">
-        <h2>Araw at Buwan</h2>
-        </a>
-  </div>
-
-  <!-- EPs -->
-  <div id="EP">
-  <section id="eps">
-    <h1>EPs</h1>
-    <div class="release">
-        <a href="https://www.push.fm/fl/kahit-malayo">
-            <img src="https://i.scdn.co/image/ab67616d00001e02013ab29fc2b084532f6528d8" alt="img" width="300" height="300">
-            <h2>Kahit Malayo</h2>
-        </a>
-        
+  <!-- Spotify Player Embed -->
+  <section class="player-section reveal">
+    <div class="container">
+        <div class="player-card">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/4HrFZiKgiyELW2uspix9T2?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
     </div>
   </section>
-  </div>
 
-
-  <!-- Singles -->
-  <div id="singles-bg">
-  <section id="singles">
-    <h1>Singles</h1>
-    <!--Ikaw Lang-->
-    <div class="release">
-        <a href="https://www.push.fm/fl/ikaw-lang">
-            <img src="https://i.scdn.co/image/ab67616d00001e02eeda5c5833bb76c85b809313" alt="img" width="300" height="300">
-            <h2>Ikaw Lang</h2>
-        </a>
-    </div>
-
-    <!--Makalaya-->
-    <div class="release">
-        <a href="https://www.push.fm/fl/makalaya">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsThIipJx1PtjWQXgvR1djnPgfrp3Enb_fFg&s" alt="img" width="300" height="300">
-            <h2>Makalaya</h2>
-        </a>
-    </div>
-
-    <!--Baliw Sayo-->
-    <div class="release">
-        <a href="https://www.push.fm/fl/baliw-sayo">
-            <img src="https://i.scdn.co/image/ab67616d00001e02773441bd2a1c50b07cea9f0f" alt="img" width="300" height="300">
-            <h2>Baliw Sayo</h2> 
-        </a>
-    </div>
-
-    <!--Jskie-->
-    <div class="release">
-        <a href="https://www.push.fm/fl/jskie">
-            <img src="https://i.scdn.co/image/ab67616d00001e02467daa9f0393799661184fe3" alt="img" width="300" height="300">
-            <h2>Jskie</h2>  
-        </a>
-    </div>
-
-    <!--Jhanelly-->
-    <div class="release">
-        <a href="https://www.push.fm/fl/jhanelly">
-            <img src="https://i1.sndcdn.com/artworks-w3g6zGrGaqdEmGEU-VP143w-t240x240.jpg" alt="img" width="300" height="300">
-            <h2>Jhanelly</h2>
-        </a>
-    </div>
-
-    <!--Hiling-->
-    <div class="release">
-        <a href="https://www.push.fm/fl/hiling">
-            <img src="https://i.scdn.co/image/ab67616d00001e02e3044a151fc538a3715524a6" alt="img" width="300" height="300">
-            <h2>Hiling</h2>
-        </a>
-    </div>
-
-    <!--Takip Silim-->
-    <div class="release">
-        <a href="#">
-            <img src="https://i1.sndcdn.com/artworks-gji2p6dbiT35tEGg-24eC0A-t240x240.jpg" alt="img" width="300" height="300">
-            <h2>Takip Silim</h2>
-        </a>
-    </div>
-
+  <!-- Music Section (Bento Grid) -->
+  <main id="music" class="container">
     
-  </section>
-  </div>
+    <div class="section-header reveal">
+        <h2>Discography</h2>
+        <p>Eps & Official Singles</p>
+    </div>
 
-  <div id="unofficial">
-    <h1>YouTube Releases</h1>
+    <div class="bento-grid">
+      <!-- EP (Large Item) -->
+      <a href="https://www.push.fm/fl/kahit-malayo" class="bento-item tall reveal">
+        <img src="https://i.scdn.co/image/ab67616d00001e02013ab29fc2b084532f6528d8" alt="Kahit Malayo">
+        <div class="item-info">
+          <span>EP</span>
+          <h3>Kahit Malayo</h3>
+        </div>
+      </a>
 
-    <!--Aking Nadarama-->
-    <div class="release">
-        <a href="https://www.youtube.com/watch?v=3o-5f4nJKIM">
-            <img src="https://i1.sndcdn.com/artworks-AgbElo0PSVtFJoNj-JvGcWg-t240x240.jpg" alt="img" width="300" height="300">
-            <h2>Aking Nadarama</h2>
+      <!-- Singles (Nested Grid) -->
+      <div class="nested-grid">
+        <a href="https://www.push.fm/fl/ikaw-lang" class="bento-item small reveal">
+          <img src="https://i.scdn.co/image/ab67616d00001e02eeda5c5833bb76c85b809313" alt="Ikaw Lang">
+          <div class="item-info"><h3>Ikaw Lang</h3></div>
         </a>
-    </div>
-
-    <!--Gabi-->
-    <div class="release">
-        <a href="https://www.youtube.com/watch?v=lNl5Q2-fPUM">
-            <img src="https://i.ytimg.com/vi/lNl5Q2-fPUM/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGC8gZyhyMA8=&rs=AOn4CLCVlIZ_-8JN6o4BgPfET3rS47LnzA" alt="img" width="300" height="300">
-            <h2>Gabi</h2>
+        <a href="https://www.push.fm/fl/makalaya" class="bento-item small reveal">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsThIipJx1PtjWQXgvR1djnPgfrp3Enb_fFg&s" alt="Makalaya">
+          <div class="item-info"><h3>Makalaya</h3></div>
         </a>
-    </div>
-
-    <!--Ok Lang Ako-->
-    <div class="release">
-        <a href="https://youtu.be/ktgAV1-CGN8">
-            <img src="https://i9.ytimg.com/vi/ktgAV1-CGN8/mqdefault.jpg?sqp=COjknsYG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGIgZShEMA8=&rs=AOn4CLDRfc7FGmHw3DrBWMFxU72GnF2aVA" alt="img" width="300" height="300">
-            <h2>Ok Lang Ako</h2>
+        <a href="https://www.push.fm/fl/baliw-sayo" class="bento-item small reveal">
+          <img src="https://i.scdn.co/image/ab67616d00001e02773441bd2a1c50b07cea9f0f" alt="Baliw Sayo">
+          <div class="item-info"><h3>Baliw Sayo</h3></div>
         </a>
+        <a href="https://www.push.fm/fl/jskie" class="bento-item small reveal">
+          <img src="https://i.scdn.co/image/ab67616d00001e02467daa9f0393799661184fe3" alt="Jskie">
+          <div class="item-info"><h3>Jskie</h3></div>
+        </a>
+      </div>
     </div>
-  </div>
 
-  
-
-  <!--dito ang Footer -->
-  <div id="footer">
-    <p>Get Connected with Ralph Cervera:</p>
-    <div class="social-links">
-      <a href="https://www.facebook.com/RainCee.8" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-        <span>Facebook</span>
-      </a>
-      <a href="https://www.instagram.com/raincee14/" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-        <span>Instagram</span>
-      </a>
-      <a href="https://www.youtube.com/@RalphCervera" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
-        <span>YouTube</span>
-      </a>
-      <a href="https://www.tiktok.com/@ralphcervera" target="_blank">
-        <img src="https://img.icons8.com/?size=100&id=kM0cd7be1NC1&format=png&color=000000" alt="TikTok" id="tiktok-icon">
-        <span>TikTok</span>
-      </a>
-      <a href="https://x.com/RainCee8" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
-        <span>Twitter</span>
-      </a>
-      <a href="https://open.spotify.com/artist/4HrFZiKgiyELW2uspix9T2?si=eaA39M6PQ2-eRCKIc2xhGg&referral=labelaffiliate&utm_source=1101lBG6GsWx&utm_medium=Indie_Routenote&utm_campaign=labelaffiliate&nd=1&dlsi=817ecb93c8e64015" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111624.png" alt="Spotify">
-        <span>Spotify</span>
-      </a>
-
-
-      
+    <!-- YouTube Originals (Standard Grid) -->
+    <div id="watch" class="section-header reveal" style="margin-top: 120px;">
+        <h2>YouTube Originals</h2>
+        <p>Official sessions, acoustic covers, and visualizers</p>
     </div>
-    <br>
-    <!--email to-->
-    <p>👉 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ralphcervera6@gmail.com&su=Hello%20Ralph&body=I%20want%20to%20connect!" target="_blank">Send a Mail Now!</a> 👈</p>
-
     
-    <p>© 2025 Ralph Cervera</p>
-  </div>
+    <div class="grid-standard">
+        <a href="https://www.youtube.com/watch?v=3o-5f4nJKIM" target="_blank" class="yt-card reveal">
+            <div class="yt-thumb"><img src="https://i1.sndcdn.com/artworks-AgbElo0PSVtFJoNj-JvGcWg-t240x240.jpg" alt="Aking Nadarama"></div>
+            <h3>Aking Nadarama</h3>
+        </a>
+        <a href="https://www.youtube.com/watch?v=lNl5Q2-fPUM" target="_blank" class="yt-card reveal">
+            <div class="yt-thumb"><img src="https://i.ytimg.com/vi/lNl5Q2-fPUM/hq720.jpg" alt="Gabi"></div>
+            <h3>Gabi</h3>
+        </a>
+        <a href="https://youtu.be/ktgAV1-CGN8" target="_blank" class="yt-card reveal">
+            <div class="yt-thumb"><img src="https://i.ytimg.com/vi/ktgAV1-CGN8/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGGIgZShEMA8=&rs=AOn4CLAIRRe_NjaDWBXIJvAfsve-buYiOQ" alt="Ok Lang Ako"></div>
+            <h3>Ok Lang Ako</h3>
+        </a>
+        <a href="https://www.youtube.com/watch?v=FiMKeq4aaxQ" target="_blank" class="yt-card reveal">
+            <div class="yt-thumb"><img src="https://i.ytimg.com/vi/FiMKeq4aaxQ/maxresdefault.jpg" alt="Takip Silim"></div>
+            <h3>Takip Silim</h3>
+        </a>
+        <a href="https://www.youtube.com/watch?v=ilHTihJSWC8" target="_blank" class="yt-card reveal">
+            <div class="yt-thumb"><img src="https://i.ytimg.com/vi/ilHTihJSWC8/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGDMgTyhyMA8=&rs=AOn4CLAi4oTEZlCrZWtyWQvp3zeLhyq4lw" alt="Teka Lang"></div>
+            <h3>Teka Lang</h3>
+        </a>
+        <a href="https://www.youtube.com/watch?v=-81XI4Ku95M" target="_blank" class="yt-card reveal">
+            <div class="yt-thumb"><img src="https://i.ytimg.com/vi/-81XI4Ku95M/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGDkgWihyMA8=&rs=AOn4CLAhF9hWrJm3hlNYTBUpdvfFnXeLMQ" alt="Dahil Sayo"></div>
+            <h3>Dahil Sayo</h3>
+        </a>
+    </div>
 
-  <a href="#content"><button id="back_to_top">back to top</button></a>
+  </main>
+
+  <!-- Contact & Footer -->
+  <footer id="contact">
+    <div class="footer-wrap">
+        <div class="footer-links reveal">
+            <a href="https://open.spotify.com/artist/4HrFZiKgiyELW2uspix9T2" target="_blank">Spotify</a>
+            <a href="https://www.facebook.com/RainCee.8" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/raincee14/" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@ralphcervera" target="_blank">TikTok</a>
+        </div>
+        <h2 class="reveal">Ralph Cervera</h2>
+        <a href="mailto:ralphcervera6@gmail.com" class="footer-email reveal">ralphcervera6@gmail.com</a>
+        <p class="credits reveal">© 2025 ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
