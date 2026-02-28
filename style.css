@@ -210,3 +210,138 @@ footer h2 { font-size: 4rem; margin-bottom: 20px; }
         padding: 60px 20px;
     }
 }
+
+
+/* ============================= */
+/* GLOBAL RESPONSIVE IMPROVEMENTS */
+/* ============================= */
+
+/* Prevent layout overflow issues */
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Make all images responsive by default */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Better container scaling for very large screens */
+@media (min-width: 1600px) {
+    .container,
+    .nav-content,
+    .hero-content {
+        max-width: 1500px;
+    }
+
+    .hero-title {
+        font-size: 7rem;
+    }
+}
+
+/* Improve tablet layout */
+@media (max-width: 1024px) {
+    .hero-content {
+        gap: 40px;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nested-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-standard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Improve small tablet / large phone */
+@media (max-width: 768px) {
+
+    #navbar {
+        padding: 15px 0;
+    }
+
+    .nav-content {
+        padding: 0 20px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 140px 0 80px;
+    }
+
+    .hero-title {
+        font-size: clamp(2.5rem, 8vw, 4rem);
+    }
+
+    .hero-actions {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .btn {
+        padding: 14px 25px;
+    }
+
+    .container {
+        padding: 80px 20px;
+    }
+}
+
+/* Improve small phones */
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 120px 0 60px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+        line-height: 1.1;
+    }
+
+    .hero-tag {
+        font-size: 0.7rem;
+        letter-spacing: 3px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    footer h2 {
+        font-size: 2.5rem;
+    }
+
+    .footer-email {
+        font-size: 1.1rem;
+        word-break: break-word;
+    }
+
+    .grid-standard {
+        grid-template-columns: 1fr;
+    }
+
+    .nested-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ultra small devices */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        font-size: 0.7rem;
+        padding: 12px 18px;
+    }
+}
